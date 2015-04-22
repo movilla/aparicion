@@ -10,6 +10,7 @@
 <body>
   <section id="cartas">
    <img id="carta" class="aparicion" src="style/img/es/destino/DOTZ_Dorso_Destino.jpg">
+  
   </section>
   <section>
   <a id="adelante">ADELANTE</a>
