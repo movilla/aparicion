@@ -12,9 +12,7 @@ for (var i = input.length-1; i >=0; i--) {
 return input;
 };
 
-document.querySelector('#adelante').onclick = function () {
-        var botonlante = document.getElementById('adelante');
-        botonlante.style.visibility ='hidden';
+
 
         cdestino = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39', '40', '41', '42']
                 cdestino.shuffle();
@@ -108,6 +106,9 @@ document.querySelector('#adelante').onclick = function () {
 
 
                 var viendo = 0;
+document.querySelector('#adelante').onclick = function () {
+                        var botonlante = document.getElementById('adelante');
+                        botonlante.style.visibility ='hidden';
                         var imagen_actual = document.getElementById('cartente');
                         var ultima = mazo_destino.length - 1;
                         var sentido = 1;
@@ -115,6 +116,8 @@ document.querySelector('#adelante').onclick = function () {
                                 if ( auxiliar < 0) { auxiliar = ultima; }
                                 if ( auxiliar > ultima) { auxiliar = 0; }
                         viendo = auxiliar;
+                        var total = document.getElementById('total');
+                        total.innerHTML = '<a class="num_carta">'+viendo+'/'+ultima+'</a>'
                         imagen_actual.src = mazo_destino[viendo];
                         imagen_actual.style.animation = 'precarta 1s forwards';
 
@@ -126,5 +129,31 @@ document.querySelector('#adelante').onclick = function () {
                         previendo = preauxiliar;
                         imagen_actual.src = mazo_destino[previendo];
                         botonlante.style.visibility ='visible';         
+                },1200);
+};
+
+document.querySelector('#atras').onclick = function () {
+                        var botontras = document.getElementById('atras');
+                        botontras.style.visibility ='hidden';
+                        var imagen_actual = document.getElementById('cartente');
+                        var ultima = mazo_destino.length - 1;
+                        var sentido = -1;
+                        var auxiliar = viendo + sentido;
+                                if ( auxiliar < 0) { auxiliar = ultima; }
+                                if ( auxiliar > ultima) { auxiliar = 0; }
+                        viendo = auxiliar;
+                        var total = document.getElementById('total');
+                        total.innerHTML = '<a class="num_carta">'+viendo+'/'+ultima+'</a>'
+                        imagen_actual.src = mazo_destino[viendo];
+                        imagen_actual.style.animation = 'precarta 1s forwards';
+
+                setTimeout(function(){
+                        var imagen_fondo = document.getElementById('carta');
+                        imagen_fondo.src = mazo_destino[viendo];
+                        imagen_actual.style.animation = '';
+                        var preauxiliar = auxiliar +1;
+                        previendo = preauxiliar;
+                        imagen_actual.src = mazo_destino[previendo];
+                        botontras.style.visibility ='visible';         
                 },1200);
 };
