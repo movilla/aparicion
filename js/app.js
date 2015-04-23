@@ -103,11 +103,7 @@ document.querySelector('#adelante').onclick = function () {
                 mazo_destino[41] = 'style/img/'+cdes_41+'.jpg';
                 mazo_destino[42] = 'style/img/'+cdes_41+'.jpg';
 
- //               var cartas = document.getElementById('cartas');
- //               cartas.innerHTML = '<img id="carta" class="aparicion" src="style/img/DOTZ_Dorso_Destino.jpg">';
-
                 var viendo = 0;
-                document.querySelector('#adelante').onclick = function moviendo() {
                         var imagen_actual = document.getElementById('carta');
                         var ultima = mazo_destino.length - 1;
                         var sentido = 1;
@@ -116,5 +112,4 @@ document.querySelector('#adelante').onclick = function () {
                                 if ( auxiliar > ultima) { auxiliar = 0; }
                         viendo = auxiliar;
                         imagen_actual.src = mazo_destino[viendo];
-                }
 };
