@@ -1,0 +1,40 @@
+#fondo {
+  position:fixed;
+  background: url("img/tile-5b.jpg") no-repeat center center fixed;
+  background-size: cover;
+  width:100%;
+  height:100%;
+  top: 0rem;
+  left: 0rem;
+  z-index: -2;
+}
+
+.cartap {
+  max-height: 80%;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -5;
+  margin-top: 0.75rem;
+  border-radius: 0.5rem;
+  box-shadow: -0.5rem 0.9rem 0.9rem 0.5rem rgba(0,0,0,80);
+  z-index: 1;
+}
+
+.precartap {   
+  max-height: 80%;
+  position: fixed;
+  left: 150%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -5;
+  margin-top: 0.75rem;
+  border-radius: 0.5rem;
+  z-index: 1;
+}
+
+@keyframes precarta {
+        0%	{left: 150%;}
+	100%    {left: 50%;}
+}

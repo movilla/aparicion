@@ -13,6 +13,9 @@ return input;
 };
 
 document.querySelector('#adelante').onclick = function () {
+        var botonlante = document.getElementById('adelante');
+        botonlante.style.visibility ='hidden';
+
         cdestino = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39', '40', '41', '42']
                 cdestino.shuffle();
                 var cdes_1 = cdestino[0]
@@ -59,52 +62,53 @@ document.querySelector('#adelante').onclick = function () {
                 var cdes_42 = cdestino[41]
 
                 var mazo_destino = new Array();
-                mazo_destino[0] = 'style/img/DOTZ_Dorso_Destino.jpg';
-                mazo_destino[1] = 'style/img/'+cdes_1+'.jpg';
-                mazo_destino[2] = 'style/img/'+cdes_2+'.jpg';
-                mazo_destino[3] = 'style/img/'+cdes_3+'.jpg';
-                mazo_destino[4] = 'style/img/'+cdes_4+'.jpg';
-                mazo_destino[5] = 'style/img/'+cdes_5+'.jpg';
-                mazo_destino[6] = 'style/img/'+cdes_6+'.jpg';
-                mazo_destino[7] = 'style/img/'+cdes_7+'.jpg';
-                mazo_destino[8] = 'style/img/'+cdes_8+'.jpg';
-                mazo_destino[9] = 'style/img/'+cdes_9+'.jpg';
-                mazo_destino[10] = 'style/img/'+cdes_10+'.jpg';
-                mazo_destino[11] = 'style/img/'+cdes_11+'.jpg';
-                mazo_destino[12] = 'style/img/'+cdes_12+'.jpg';
-                mazo_destino[13] = 'style/img/'+cdes_13+'.jpg';
-                mazo_destino[14] = 'style/img/'+cdes_14+'.jpg';
-                mazo_destino[15] = 'style/img/'+cdes_15+'.jpg';
-                mazo_destino[16] = 'style/img/'+cdes_16+'.jpg';
-                mazo_destino[17] = 'style/img/'+cdes_17+'.jpg';
-                mazo_destino[18] = 'style/img/'+cdes_18+'.jpg';
-                mazo_destino[19] = 'style/img/'+cdes_19+'.jpg';
-                mazo_destino[20] = 'style/img/'+cdes_20+'.jpg';
-                mazo_destino[21] = 'style/img/'+cdes_21+'.jpg';
-                mazo_destino[22] = 'style/img/'+cdes_22+'.jpg';
-                mazo_destino[23] = 'style/img/'+cdes_23+'.jpg';
-                mazo_destino[24] = 'style/img/'+cdes_24+'.jpg';
-                mazo_destino[25] = 'style/img/'+cdes_25+'.jpg';
-                mazo_destino[26] = 'style/img/'+cdes_26+'.jpg';
-                mazo_destino[27] = 'style/img/'+cdes_27+'.jpg';
-                mazo_destino[28] = 'style/img/'+cdes_28+'.jpg';
-                mazo_destino[29] = 'style/img/'+cdes_29+'.jpg';
-                mazo_destino[30] = 'style/img/'+cdes_30+'.jpg';
-                mazo_destino[31] = 'style/img/'+cdes_31+'.jpg';
-                mazo_destino[32] = 'style/img/'+cdes_32+'.jpg';
-                mazo_destino[33] = 'style/img/'+cdes_33+'.jpg';
-                mazo_destino[34] = 'style/img/'+cdes_34+'.jpg';
-                mazo_destino[35] = 'style/img/'+cdes_35+'.jpg';
-                mazo_destino[36] = 'style/img/'+cdes_36+'.jpg';
-                mazo_destino[37] = 'style/img/'+cdes_37+'.jpg';
-                mazo_destino[38] = 'style/img/'+cdes_38+'.jpg';
-                mazo_destino[39] = 'style/img/'+cdes_39+'.jpg';
-                mazo_destino[40] = 'style/img/'+cdes_40+'.jpg';
-                mazo_destino[41] = 'style/img/'+cdes_41+'.jpg';
-                mazo_destino[42] = 'style/img/'+cdes_41+'.jpg';
+                mazo_destino[0] = 'style/img/'+cdes_1+'.jpg';
+                mazo_destino[1] = 'style/img/'+cdes_2+'.jpg';
+                mazo_destino[2] = 'style/img/'+cdes_3+'.jpg';
+                mazo_destino[3] = 'style/img/'+cdes_4+'.jpg';
+                mazo_destino[4] = 'style/img/'+cdes_5+'.jpg';
+                mazo_destino[5] = 'style/img/'+cdes_6+'.jpg';
+                mazo_destino[6] = 'style/img/'+cdes_7+'.jpg';
+                mazo_destino[7] = 'style/img/'+cdes_8+'.jpg';
+                mazo_destino[8] = 'style/img/'+cdes_9+'.jpg';
+                mazo_destino[9] = 'style/img/'+cdes_10+'.jpg';
+                mazo_destino[10] = 'style/img/'+cdes_11+'.jpg';
+                mazo_destino[11] = 'style/img/'+cdes_12+'.jpg';
+                mazo_destino[12] = 'style/img/'+cdes_13+'.jpg';
+                mazo_destino[13] = 'style/img/'+cdes_14+'.jpg';
+                mazo_destino[14] = 'style/img/'+cdes_15+'.jpg';
+                mazo_destino[15] = 'style/img/'+cdes_16+'.jpg';
+                mazo_destino[16] = 'style/img/'+cdes_17+'.jpg';
+                mazo_destino[17] = 'style/img/'+cdes_18+'.jpg';
+                mazo_destino[18] = 'style/img/'+cdes_19+'.jpg';
+                mazo_destino[19] = 'style/img/'+cdes_20+'.jpg';
+                mazo_destino[20] = 'style/img/'+cdes_21+'.jpg';
+                mazo_destino[21] = 'style/img/'+cdes_22+'.jpg';
+                mazo_destino[22] = 'style/img/'+cdes_23+'.jpg';
+                mazo_destino[23] = 'style/img/'+cdes_24+'.jpg';
+                mazo_destino[24] = 'style/img/'+cdes_25+'.jpg';
+                mazo_destino[25] = 'style/img/'+cdes_26+'.jpg';
+                mazo_destino[26] = 'style/img/'+cdes_27+'.jpg';
+                mazo_destino[27] = 'style/img/'+cdes_28+'.jpg';
+                mazo_destino[28] = 'style/img/'+cdes_29+'.jpg';
+                mazo_destino[29] = 'style/img/'+cdes_30+'.jpg';
+                mazo_destino[30] = 'style/img/'+cdes_31+'.jpg';
+                mazo_destino[31] = 'style/img/'+cdes_32+'.jpg';
+                mazo_destino[32] = 'style/img/'+cdes_33+'.jpg';
+                mazo_destino[33] = 'style/img/'+cdes_34+'.jpg';
+                mazo_destino[34] = 'style/img/'+cdes_35+'.jpg';
+                mazo_destino[35] = 'style/img/'+cdes_36+'.jpg';
+                mazo_destino[36] = 'style/img/'+cdes_37+'.jpg';
+                mazo_destino[37] = 'style/img/'+cdes_38+'.jpg';
+                mazo_destino[38] = 'style/img/'+cdes_39+'.jpg';
+                mazo_destino[39] = 'style/img/'+cdes_40+'.jpg';
+                mazo_destino[40] = 'style/img/'+cdes_41+'.jpg';
+                mazo_destino[41] = 'style/img/'+cdes_42+'.jpg';
+
+
 
                 var viendo = 0;
-                        var imagen_actual = document.getElementById('carta');
+                        var imagen_actual = document.getElementById('cartente');
                         var ultima = mazo_destino.length - 1;
                         var sentido = 1;
                         var auxiliar = viendo + sentido;
@@ -112,4 +116,15 @@ document.querySelector('#adelante').onclick = function () {
                                 if ( auxiliar > ultima) { auxiliar = 0; }
                         viendo = auxiliar;
                         imagen_actual.src = mazo_destino[viendo];
+                        imagen_actual.style.animation = 'precarta 1s forwards';
+
+                setTimeout(function(){
+                        var imagen_fondo = document.getElementById('carta');
+                        imagen_fondo.src = mazo_destino[viendo];
+                        imagen_actual.style.animation = '';
+                        var preauxiliar = auxiliar +1;
+                        previendo = preauxiliar;
+                        imagen_actual.src = mazo_destino[previendo];
+                        botonlante.style.visibility ='visible';         
+                },1200);
 };
