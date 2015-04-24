@@ -9,7 +9,7 @@
   z-index: -2;
 }
 
-.cartap {
+.foncartap {
   max-height: 80%;
   position: fixed;
   left: 50%;
@@ -19,10 +19,10 @@
   margin-top: 0.75rem;
   border-radius: 0.5rem;
   box-shadow: -0.5rem 0.9rem 0.9rem 0.5rem rgba(0,0,0,80);
-  z-index: 1;
+  z-index: 2;
 }
 
-.precartap {   
+.cartap {
   max-height: 80%;
   position: fixed;
   left: 150%;
@@ -31,10 +31,82 @@
   z-index: -5;
   margin-top: 0.75rem;
   border-radius: 0.5rem;
-  z-index: 1;
+  z-index: 3;
+}
+
+@keyframes postcarta {
+        0%	{left: 50%;}
+	100%    {left: 150%;}
+}
+
+.castasigcss {   
+  max-height: 80%;
+  position: fixed;
+  left: 150%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -5;
+  margin-top: 0.75rem;
+  border-radius: 0.5rem;
+  z-index: 4;
 }
 
 @keyframes precarta {
         0%	{left: 150%;}
 	100%    {left: 50%;}
+}
+
+.cartaantcss {
+  max-height: 80%;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -5;
+  margin-top: 0.75rem;
+  border-radius: 0.5rem;
+  z-index: 1;
+}
+
+.siguiente:after {
+  position: fixed;
+  right: 0%;
+  bottom: 8%;
+  display: flex;
+  content: url('./icons/arrow_right.png');
+  max-width: 100%;
+  color: white !important;
+  font-size: 26pt;
+  padding: 0;
+  z-index: 1;
+  height: 2em;
+  width: 2em;
+  opacity: 0.7;
+}
+
+.anterior:after {
+  left: 0%;
+  position: fixed;
+  bottom: 8%;
+  display: flex;
+  content: url('./icons/arrow_left.png');
+  max-width: 100%;
+  color: white !important;
+  font-size: 26pt;
+  padding: 0;
+  z-index: 1;
+  height: 2em;
+  width: 2em;
+  opacity: 0.7;
+}
+
+.num_carta {
+.num_carta {
+  position: fixed;
+  top: 0.5%;
+  left: 1%;
+  font-size: 2em;
+  color: white;
+  z-index: 17;
+}
 }
