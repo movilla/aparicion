@@ -180,3 +180,11 @@ document.querySelector('#atras').onclick = function () {
                           imagen_actual.src = mazo_destino[viendo];     
                 },1200);
 };
+
+
+document.querySelector('#inicio').onclick = function () {
+        var nuevo = confirm('¿Volver a barajar?');
+        if (nuevo == true) { 
+                location.href = 'index.html'
+        }
+};
