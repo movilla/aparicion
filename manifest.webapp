@@ -1,5 +1,5 @@
 {
-  "name": "Cartas Aparición",
+  "name": "Mazo Aparición",
   "description": "Aplicación complementaria para el juego de mesa Zombicide 1º Temporada",
   "version": "0.0.1",
   "launch_path": "/index.html",
