@@ -1,18 +1,13 @@
 Array.prototype.shuffle = function() {
-var input = this;
-
-for (var i = input.length-1; i >=0; i--) {
-
+  var input = this;
+  for (var i = input.length-1; i >=0; i--) {
     var randomIndex = Math.floor(Math.random()*(i+1)); 
     var itemAtIndex = input[randomIndex]; 
-
     input[randomIndex] = input[i]; 
     input[i] = itemAtIndex;
-}
-return input;
+  }
+  return input;
 };
-
-
 
         cdestino = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39', '40', '41', '42']
                 cdestino.shuffle();
@@ -106,7 +101,6 @@ return input;
 
                 var botontras = document.getElementById('atras');
 
-
                 var viendo = 0;
                 if ( viendo == 0 ) { botontras.style.visibility ='hidden'; }
 document.querySelector('#adelante').onclick = function () {
@@ -180,7 +174,6 @@ document.querySelector('#atras').onclick = function () {
                           imagen_actual.src = mazo_destino[viendo];     
                 },1200);
 };
-
 
 document.querySelector('#inicio').onclick = function () {
         var nuevo = confirm('¿Volver a barajar?');
