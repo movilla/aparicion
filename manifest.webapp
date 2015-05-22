@@ -1,7 +1,7 @@
 {
   "name": "Aparición",
   "description": "Aplicación complementaria para el juego de mesa Zombicide 1º Temporada",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "launch_path": "/index.html",
   "icons": {
     "60": "/style/img/icono_60.png",
